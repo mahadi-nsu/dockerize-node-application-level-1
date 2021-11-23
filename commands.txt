@@ -1,8 +1,15 @@
 // docker build
-
+docker build -t <docker_image_name> .
 
 // docker run
 docker run -p 3000:3001 <name_of_docker_image>
 
 // docker debug
+// it provide shell to play with it
 docker run -it  <name_of_docker_image> sh
+
+// find out current running docker docker_image_name
+docker ps
+
+// current running docker image debug in shell
+docker exec -it <id_of_docker_image_running_now> sh
